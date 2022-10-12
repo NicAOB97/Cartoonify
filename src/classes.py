@@ -12,6 +12,7 @@ class imageLabel(QLabel):
         super().__init__()
 
         self.setText('\n\n Drop Image Here \n\n')
+        self.setAlignment(Qt.AlignCenter)
         self.setStyleSheet('''
             QLabel{
                 border: 4px dashed #aaa
@@ -104,8 +105,7 @@ class crtnfyApp(QWidget) :
 
         #masking edged image with our "BEAUTIFY" image
         cartoonImage = cv.bitwise_and(colorImage, colorImage, mask=getEdge)
-        # ReSized6 = cv.resize(cartoonImage, (960, 540))
-
+        
         # turn into compatible qpixmap
         height, width, channel = cartoonImage.shape
         bytesPerLine = 3 * width
