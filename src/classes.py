@@ -81,9 +81,9 @@ class crtnfyApp(QWidget) :
         self.path = file_path
 
     def dwnldImage(self):
-        name = QFileDialog.getSaveFileName(self, 'Save File')
-        file = open(name, 'w')
-        self.photoViewer.setPixmap(QPixmap('../triali.png'))
+        image = ImageQt.fromqpixmap(self.photoViewer.pixmap())
+        name = input()
+        image.save('./images/'+ name +'.png')
 
     def crtnfyImage(self):
 

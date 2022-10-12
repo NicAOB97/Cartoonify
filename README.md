@@ -3,7 +3,7 @@
 <strong>Project undertaken to practice Python, diving into the use of the library PyQt5 and CV. </strong><br>
 Give me any image and I'll give back the cartoon version.
 
-<strong><em>Proyecto para practicar Python, explorando las librerias de PyQt5 y CV.</em></strong>
+<strong><em>Proyecto para practicar Python, explorando las librerias de PyQt5 y CV.</em></strong><br>
 <em>Dame cualquier imagen y te devolvere un dibujo animado.</em>
 
 ![Bird](images/bird.jpg?raw=true "Cartoon Bird") 
