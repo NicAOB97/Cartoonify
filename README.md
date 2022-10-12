@@ -6,7 +6,7 @@ Give me any image and I'll give back the cartoon version.
 <strong><em>Proyecto para practicar Python, explorando la libreria de CV.</em></strong>
 <em>Dame cualquier imagen y te devolvere un dibujo animado.</em>
 
-![Computer](src/img/comput.jpeg?raw=true "Computer Setup") 
+![cartoon bird](/images/cart_bird.png?raw=true "Cartoon Bird") 
 
 <h2>Pre-requisites :heavy_check_mark: </h2>
 
