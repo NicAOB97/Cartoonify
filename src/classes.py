@@ -4,6 +4,7 @@ from PyQt5.QtWidgets import QLabel, QWidget, QPushButton, QHBoxLayout
 from PyQt5.QtCore import  Qt
 from PyQt5.QtGui import QPixmap, QImage
 import cv2 as cv
+from PIL import ImageQt
 
 # create class for photo viewing screen
 class imageLabel(QLabel):
@@ -82,13 +83,13 @@ class crtnfyApp(QWidget) :
 
     def dwnldImage(self):
         image = ImageQt.fromqpixmap(self.photoViewer.pixmap())
-        name = input()
-        image.save('./images/'+ name +'.png')
+        name = self.invisible_path[-9:-4] 
+        image.save('./images/'+ name +'_crtn.png')
 
     def crtnfyImage(self):
 
         # read image and correct color
-        originalPic = cv.imread(str( self.invisible_path))
+        originalPic = cv.imread(str(self.invisible_path))
         originalPic = cv.cvtColor(originalPic, cv.COLOR_BGR2RGB)
 
         # create greyscale image, smoothen and retrieve edges with thresholding technique
